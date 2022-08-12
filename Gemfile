@@ -78,4 +78,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  # Provides "time travel" and "time freezing" capabilities. Useful in testing time-dependent code
+  gem 'timecop', '~> 0.9.5'
 end

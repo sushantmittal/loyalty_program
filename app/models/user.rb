@@ -15,6 +15,8 @@ class User < ApplicationRecord
 
   validate :ensure_date_of_birth_in_the_past
 
+  scope :date_of_birth_in_month, ->(month) { where("extract(month from date_of_birth)= ?", month) }
+
   private
 
     def ensure_date_of_birth_in_the_past

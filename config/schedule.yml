@@ -1,0 +1,9 @@
+issue_birthday_month_rewards_job:
+  cron: "0 0 1 * *" # Runs every month at 00:00
+  class: "IssueBirthdayMonthRewardsJob"
+  queue: default
+
+end_of_cycle_job:
+  cron: "0 0 1 1 *" # Runs every year on 1 Jan at 00:00
+  class: "EndOfCycleJob"
+  queue: default

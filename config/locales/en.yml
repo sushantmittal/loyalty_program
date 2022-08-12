@@ -30,4 +30,11 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            date_of_birth:
+              future: Please enter date_of_birth in the past.
+              format: Please enter a valid e-mail address.
